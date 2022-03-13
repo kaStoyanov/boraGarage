@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footerCmp">
             <footer>
                 <div className="footerCategorie">
-                    <h1>Categories</h1>
+                    <h1>Категории</h1>
                     <ul>
                         <li><Link to='/shop/?cg=BMW'>BMW</Link></li>
                         <li><Link to='/shop/?cg=Mercedes'>Mercedes</Link></li>
@@ -28,10 +28,12 @@ const Footer = () => {
                 </div> */}
 
                 <div className="footerGetInTouch">
-                    <h1>Get in touch</h1>
+                    <h1>Имате въпроси ?</h1>
                     <ul>
-                        <p>Any questions? Let us know in store at BP 473 Complexe universitaire Al Qods, Oujda 60000 or call us on (+212) 65964665</p>
-                        <li className="footerIcons">
+                        <p>Потърсете ни на адрес:</p>
+                        <p>Гр. Пловдив ул. Васил Левски 172</p>
+                        <p>Или на телефон +359 876100824</p>
+                        {/* <li className="footerIcons">
                             <FiFacebook size="25" />
                         </li>
                         <li className="footerIcons">
@@ -39,7 +41,7 @@ const Footer = () => {
                         </li>
                         <li className="footerIcons">
                             <IoLogoYoutube size="25" />
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
 

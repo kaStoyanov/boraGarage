@@ -3,14 +3,14 @@ import { Image } from "@chakra-ui/react"
 import { Helmet } from 'react-helmet';
 
 import cover from './cover.jpg'
-import { Input,InputGroup, InputLeftElement, Textarea,Button  } from "@chakra-ui/react"
-import {BsEnvelope, GiPositionMarker, HiOutlinePhone} from 'react-icons/all'
+import { Input, InputGroup, InputLeftElement, Textarea, Button } from "@chakra-ui/react"
+import { BsEnvelope, GiPositionMarker, HiOutlinePhone } from 'react-icons/all'
 import './contactuscss.css'
 const Contactus = () => {
     const [email, setemail] = useState('')
     const [body, setbody] = useState('')
 
-    const handlesubmit = () =>{
+    const handlesubmit = () => {
         window.open(`mailto:abdessamadbouthjoul@gmail.com?subject=Sample&body=${body}`)
     }
     return (
@@ -19,7 +19,7 @@ const Contactus = () => {
             <Helmet>
                 <title>Contact</title>
             </Helmet>
-        {/* <div className="headerContact">
+            {/* <div className="headerContact">
             <Image className="imageContact" src='https://i.imgur.com/7rwaigw.jpg' alt="contactImage" objectFit="cover"/>
          
             <div className="text">
@@ -28,9 +28,9 @@ const Contactus = () => {
               
         </div> */}
 
-        <div className="card-contact">
-            <div className="sendMsg">
-                <h4>Send Us A Message</h4>
+            <div className="card-contact">
+                {/* <div className="sendMsg">
+                <h4>Изпратете ни съо</h4>
                     <div className="inputContact">
                         <InputGroup width="450px" >
                             <InputLeftElement       pointerEvents="none"  children={<BsEnvelope className = 'envolope' color="gray.300" />}/>
@@ -45,35 +45,35 @@ const Contactus = () => {
                         <Button onClick = {handlesubmit} borderRadius="90px" colorScheme="teal" variant="solid" size="180px" className="contactBtn">Submit</Button>
                     </div>
 
-            </div>
-            <div className="showAdrss">
-                <div className="box">
-                    <div className="iconCtn"><GiPositionMarker opacity="0.8"/></div>
-                    <div className="adressCtn">
-
-                        <h3> Address</h3>
-                        <p>Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US</p>
-                    </div>
-                </div>
+            </div> */}
+                <div className="showAdrss">
                     <div className="box">
-                    <div className="iconCtn"><HiOutlinePhone opacity="0.8"/></div>
-                    <div className="adressCtn">
+                        <div className="iconCtn"><GiPositionMarker opacity="0.8" /></div>
+                        <div className="adressCtn">
 
-                        <h3>Lets Talk</h3>
-                        <p className="infoCtn">0657964665</p>
+                            <h3> Адрес</h3>
+                            <p>Град Пловдив Улица Васил Левски 172</p>
+                        </div>
                     </div>
-                </div>
-                <div className="box">
-                    <div className="iconCtn"><BsEnvelope opacity="0.8"/></div>
-                    <div className="adressCtn">
+                    <div className="box">
+                        <div className="iconCtn"><HiOutlinePhone opacity="0.8" /></div>
+                        <div className="adressCtn">
 
-                        <h3>Sale Support</h3>
-                        <p className="infoCtn">Store@gmail.com</p>
+                            <h3>Телефон</h3>
+                            <p className="infoCtn">+359 876100824</p>
+                        </div>
+                    </div>
+                    <div className="box">
+                        <div className="iconCtn"><BsEnvelope opacity="0.8" /></div>
+                        <div className="adressCtn">
+
+                            <h3>Имейл</h3>
+                            <p className="infoCtn">Abvservice@abv.bg</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-</div>
     )
 }
 

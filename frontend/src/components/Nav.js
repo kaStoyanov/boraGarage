@@ -8,6 +8,7 @@ import { RiShoppingCart2Line, IoCloseOutline, MdSearch, BsArrowRightShort, MdKey
 import { logout } from '../actions/userActions'
 import { keyword } from 'color-convert'
 import Searchnav from './Searchnav';
+import logo from '../logo.jpg'
 
 const Nav = ({ history }) => {
     const [incart, setincart] = useState(0);
@@ -95,7 +96,7 @@ const Nav = ({ history }) => {
 
     return (
         <nav ref={Nav} className={`nav ${nav ? 'active' : ''}`} >
-            <div className="logo"><Link to=''>BORA GARAGE</Link></div>
+            <div className="logo"><Link to=''>ABC Garage</Link></div>
             <ul className="navLinks" ref={navLinks}>
                 <NavLink to="/" exact activeClassName='activlink' ><li>Home</li></NavLink>
                 <NavLink to="/shop" activeClassName='activlink' ><li>Shop</li></NavLink>

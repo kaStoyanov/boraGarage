@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Bora Garage</title>
+                <title>ABC GARAGE</title>
             </Helmet>
             <div>
                 <Slider />
